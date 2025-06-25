@@ -23,7 +23,7 @@ Não é um projeto complexo,mas é um reflexo genuíno da minha vontade de apren
 
 
 Se este projeto chamou sua atenção ou se quiser conversar sobre tecnologia, aprendizado ou oportunidades, sinta-se à vontade para entrar em contato. Vamos evoluir juntos. 🚀
-[Conecte-se comigo no LinkedIn](www.linkedin.com/in/yan-pedro-30013a344)
+[Conecte-se comigo no LinkedIn](https://www.linkedin.com/in/yan-pedro-30013a344/)
 
 )
 
