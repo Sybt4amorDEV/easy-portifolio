@@ -1,2 +1,413 @@
-Meu eBook pessoal para estudos e desenvolvimento. Baixe o arquivo .ZIP para visualizar.
-Grato!
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minha Jornada - eBook Interativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ebook.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <!-- Navegação -->
+      <div class="nav-btns">
+        <button
+          id="nav-capa"
+          class="btn btn-outline-primary"
+          onclick="showSection(0)"
+        >
+          Capa
+        </button>
+        <button
+          id="nav-infancia"
+          class="btn btn-outline-primary"
+          onclick="showSection(1)"
+        >
+          Infância & Origem
+        </button>
+        <button
+          id="nav-familia"
+          class="btn btn-outline-primary"
+          onclick="showSection(2)"
+        >
+          Família & Educação
+        </button>
+        <button
+          id="nav-hobbies"
+          class="btn btn-outline-primary"
+          onclick="showSection(3)"
+        >
+          Hobbies & Interesses
+        </button>
+        <button
+          id="nav-momentos"
+          class="btn btn-outline-primary"
+          onclick="showSection(4)"
+        >
+          Momentos Importantes
+        </button>
+        <button
+          id="nav-galeria"
+          class="btn btn-outline-primary"
+          onclick="showSection(5)"
+        >
+          Galeria de Fotos
+        </button>
+        <button
+          id="nav-mensagem"
+          class="btn btn-outline-primary"
+          onclick="showSection(6)"
+        >
+          Mensagem Final
+        </button>
+      </div>
+
+      <!-- Capa Interativa -->
+      <div id="capa" class="section active-section">
+        <div class="cover-interactive" onclick="showSection(1)">
+          <h1 class="display-4">Minha Jornada</h1>
+          <p class="lead">
+            Clique aqui para começar a explorar minha história!
+          </p>
+        </div>
+        <div class="d-flex justify-content-end mt-4">
+          <button class="btn btn-gradient" onclick="showSection(1)">
+            Próxima seção
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-right ms-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+     <!-- Infância & Origem -->
+<div id="infancia" class="section">
+  <h2>Infância & Origem</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <p>
+        Nasci e cresci em Brasília, no Sol Nascente — um lugar que, apesar de tantas dificuldades, moldou quem sou. No início, a vida por lá era dura. Minha família enfrentava limitações financeiras, e o bairro, naquela época, era marcado por insegurança, ruas de terra, esgoto a céu aberto e uma infraestrutura que mal dava conta do básico. Entre 2015 e 2018, o Sol Nascente era considerado uma das maiores favelas da América Latina, com altos índices de vulnerabilidade social, coleta de lixo precária e acesso limitado à educação e saneamento.
+        <br><br>
+        Mas mesmo nesse cenário, havia vida pulsando em cada esquina. Eu brincava muito na rua, cercado por amigos que, como eu, faziam do improviso uma arte e da rua um quintal. A infância foi feita de bola de meia, pipas no céu e risadas que ecoavam entre os becos e vielas. Era uma liberdade simples, mas cheia de significado.
+        <br><br>
+        Ainda assim, cresci com um medo silencioso: o de ser julgado não por quem eu era, mas por onde eu morava. O estigma de viver no Sol Nascente me acompanhava como uma sombra — e, por muito tempo, carreguei essa insegurança no peito. Era como se meu endereço falasse mais alto que minha essência.
+        <br><br>
+        Com o tempo, as coisas começaram a mudar. A região passou por melhorias estruturais, minha família conquistou estabilidade e, aos poucos, fui entendendo que meu valor não está no CEP, mas nas escolhas que faço e nas raízes que carrego. Hoje, olho para trás com gratidão.
+        <br><br>
+        Agradeço profundamente aos meus pais, que sempre fizeram de tudo por mim e pelos nossos. Eles foram — e ainda são — meu alicerce. Mesmo quando o mundo parecia pequeno demais para os nossos sonhos, eles me ensinaram que a dignidade não depende de onde se nasce, mas de como se vive.
+      </p>
+    </div>
+    <div class="col-md-4 d-flex flex-column align-items-center">
+      <img src="imagens/infancia.jpg"
+           alt="Infância no Sol Nascente"
+           class="img-fluid rounded shadow-sm mb-3"
+           style="max-height: 180px; object-fit: cover; width: 100%;">
+      <img src="imagens/bike.jpg"
+           alt="Brincadeiras de infância"
+           class="img-fluid rounded shadow-sm"
+           style="max-height: 180px; object-fit: cover; width: 100%;">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between mt-4">
+    <button class="btn btn-gradient" onclick="showSection(0)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+      </svg>
+      Voltar
+    </button>
+    <button class="btn btn-gradient" onclick="showSection(2)">
+      Próxima seção
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Família & Educação -->
+<div id="familia" class="section">
+  <h2>Família & Educação</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        Minha base sempre foi a minha família. Meus pais são meus grandes pilares — e ao lado deles, carrego com muito carinho a lembrança do meu avô, que mesmo após sua partida, continua me inspirando com cada palavra de apoio que um dia me disse. Ele foi aquele tipo de figura que plantava coragem com gestos simples, mas marcantes. O tipo de incentivo que segue vivo dentro da gente mesmo com o tempo.
+        <br><br>
+        Desde cedo, fui ensinado a manter a fé firme, a caminhar com os pés no chão e o coração aberto. Me ensinaram que devemos ser verdadeiros com quem somos, mesmo que o mundo insista em nos encaixar em moldes que não nos pertencem. E acima de tudo, aprendi a respeitar: as pessoas, os momentos e as histórias que cruzam o nosso caminho.
+        <br><br>
+        A escola foi um cenário de altos e baixos. Tive momentos divertidos, amizades importantes e algumas dificuldades também. Reprovei uma vez — e confesso que, na época, foi um baque. Mas não deixei que isso definisse quem eu sou. Pelo contrário: me fez mais forte. Aprendi que os tropeços também constroem o caminho e que perseverar é, às vezes, o maior ato de coragem que a gente pode ter.
+        <br><br>
+        Hoje, se olho no espelho com orgulho, é porque carrego comigo tudo o que recebi de casa e da vida. A força dos meus pais, os conselhos do meu avô e o apoio dos amigos que estiveram ao meu lado nos dias bons e nos dias difíceis. Cada um deixou em mim um pedaço do que sou — e por isso, sigo em frente com gratidão.
+      </p>
+    </div>
+    <div class="col-md-3 text-center">
+      <img src="imagens/estudos.jpg"
+           alt="Família"
+           class="img-fluid rounded shadow-sm mb-3"
+           style="max-height: 180px; object-fit: cover;">
+      <img src="imagens/familia.jpg"
+           alt="Educação"
+           class="img-fluid rounded shadow-sm"
+           style="max-height: 180px; object-fit: cover;">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between mt-4">
+    <button class="btn btn-gradient" onclick="showSection(1)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+      </svg>
+      Voltar
+    </button>
+    <button class="btn btn-gradient" onclick="showSection(3)">
+      Próxima seção
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Hobbies & Interesses -->
+<div id="hobbies" class="section">
+  <h2>Hobbies & Interesses</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        Nos meus momentos livres, encontro paz nas coisas simples que me conectam com o que sou. Jogar videogame sempre foi mais que entretenimento — é um refúgio, um universo onde posso me desconectar do mundo real e mergulhar em aventuras, desafios e histórias que me inspiram a pensar diferente.
+        <br><br>
+        A trilha sonora desses momentos, muitas vezes, vem do boombap e do rap, estilos que me acompanham desde cedo. Há algo na batida crua e nas letras afiadas que me faz sentir visto — como se aquelas rimas soubessem exatamente o que passa na minha cabeça. São músicas que falam sobre luta, identidade, respeito e superação. Em alguns dias, são quase como conversas comigo mesmo.
+        <br><br>
+        Mas o que mais me faz bem mesmo é estar perto de quem eu gosto. Gosto de sair com pessoas que me fazem bem, que me deixam à vontade pra ser quem eu sou — e entre essas pessoas está minha namorada, com quem compartilho momentos de leveza, risos e silêncio confortável. Estar ao lado dela transforma qualquer lugar no melhor rolê.
+        <br><br>
+        Esses hobbies não são só passatempos. São partes vivas de quem eu sou — retratos das minhas paixões, do meu ritmo e das minhas escolhas.
+      </p>
+    </div>
+    <div class="col-md-3 text-center">
+      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80"
+           alt="Videogame"
+           class="img-fluid rounded shadow-sm mb-3"
+           style="max-height: 180px; object-fit: cover;">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+           alt="Música e amigos"
+           class="img-fluid rounded shadow-sm"
+           style="max-height: 180px; object-fit: cover;">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between mt-4">
+    <button class="btn btn-gradient" onclick="showSection(2)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+      </svg>
+      Voltar
+    </button>
+    <button class="btn btn-gradient" onclick="showSection(4)">
+      Próxima seção
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Momentos Importantes -->
+<div id="momentos" class="section">
+  <h2>Momentos Importantes</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li>
+          <strong>Capítulos da vida:</strong> A vida é feita de capítulos — uns doces, outros difíceis — mas todos indispensáveis para a narrativa que somos. No meu caso, cada momento marcante deixou um traço no que me tornei, como se a soma deles desenhasse meu caráter com traços únicos e profundos.
+        </li>
+        <li>
+          <strong>A perda do meu avô:</strong> A perda do meu avô foi uma das primeiras grandes ausências que senti. A dor da despedida ensinou sobre a fragilidade da vida, mas também sobre o quanto o amor pode ser eterno, mesmo quando alguém parte fisicamente. Sua presença segue viva nas minhas lembranças e decisões — ele continua sendo uma bússola silenciosa.
+        </li>
+        <li>
+          <strong>Reprovação na escola:</strong> Teve também a reprovação na escola, um tropeço que me fez encarar o orgulho, o medo do julgamento, e a necessidade de continuar mesmo quando parece que estamos parando. Não foi fácil, mas me mostrou que fracassos momentâneos não definem quem somos — e sim como reagimos a eles.
+        </li>
+        <li>
+          <strong>Primeiro acampamento internacional:</strong> Entre as experiências mais marcantes da minha juventude, lembro com entusiasmo do meu primeiro acampamento internacional. Lidar com outros idiomas, culturas e realidades, foi como abrir uma janela para o mundo. Voltei diferente, mais curioso, mais ousado.
+        </li>
+        <li>
+          <strong>Primeiro trabalho:</strong> Mais tarde, veio meu primeiro trabalho — o início da minha independência. Ali, aprendi sobre responsabilidade, esforço e também sobre cansaço. Sentir o peso da rotina e o valor do próprio dinheiro mudou minha relação com tudo.
+        </li>
+        <li>
+          <strong>Pedido de namoro:</strong> E talvez um dos capítulos mais bonitos dessa caminhada tenha sido quando eu pedi a Gabriela em namoro. Foi um gesto sincero, cheio de nervosismo e esperança. Estar com ela é escolher diariamente alguém que me faz querer ser melhor.
+        </li>
+        <li>
+          <strong>Ensino médio e faculdade:</strong> Completar o ensino médio e, depois, entrar na faculdade marcaram dois momentos em que senti, de verdade, que a vida estava abrindo portas — algumas que eu nem sabia que existiam.
+        </li>
+        <li>
+          <strong>Reflexão:</strong> Cada uma dessas experiências me moldou. Houve dor e alegria, tropeços e voos, mas acima de tudo, houve verdade. E olhando pra trás, eu não mudaria nada. Porque tudo — exatamente como foi — me trouxe até aqui.
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 d-flex flex-column align-items-center">
+      <img src="imagens/aliança.jpg"
+           alt="Momentos marcantes"
+           class="img-fluid rounded shadow-sm mb-3"
+           style="max-height: 180px; object-fit: cover; width: 100%;">
+      <img src="imagens/formatura.jpg"
+           alt="Superação"
+           class="img-fluid rounded shadow-sm"
+           style="max-height: 180px; object-fit: cover; width: 100%;">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between mt-4">
+    <button class="btn btn-gradient" onclick="showSection(3)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+      </svg>
+      Voltar
+    </button>
+    <button class="btn btn-gradient" onclick="showSection(5)">
+      Próxima seção
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Galeria de Fotos -->
+      <div id="galeria" class="section">
+        <h2>Galeria de Fotos</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img
+              src="imagens/nenemm.jpg"
+              class="gallery-img"
+              alt="Infância"
+            />
+            <div class="text-center">Infância</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <img
+              src="imagens/IMG-20250623-WA0007.jpg"
+              class="gallery-img"
+              alt="Família"
+            />
+            <div class="text-center">Família</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <img
+              src="imagens/IMG-20250623-WA0009.jpg"
+              class="gallery-img"
+              alt="Viagem"
+            />
+            <div class="text-center">Viagem</div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+          <button class="btn btn-gradient" onclick="showSection(4)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-left me-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"
+              />
+            </svg>
+            Voltar
+          </button>
+          <button class="btn btn-gradient" onclick="showSection(6)">
+            Próxima seção
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-right ms-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+<!-- Mensagem Final -->
+<div id="mensagem" class="section">
+  <h2>Mensagem Final</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <blockquote class="blockquote">
+        <p>
+          Se você chegou até aqui, obrigado por caminhar comigo.
+          <br><br>
+          Este eBook não é sobre feitos grandiosos ou histórias extraordinárias. É sobre ser real. Sobre crescer no Sol Nascente e transformar desafios em raízes profundas. Sobre recomeços, afeto, erros que ensinam e conquistas que florescem aos poucos.
+          <br><br>
+          É também um agradecimento. Aos meus pais, que nunca deixaram de acreditar em mim. Ao meu avô, cuja presença ultrapassa o tempo. Aos meus amigos, minha namorada Gabriela e todos que atravessaram esta estrada comigo, deixando algo de si.
+          <br><br>
+          Se minha história puder te lembrar de algo, que seja isso: não importa de onde você vem, importa o que você constrói a partir disso. Cada fase importa. Cada detalhe tem valor. Cada pessoa, cada escolha, cada silêncio.
+          <br><br>
+          Carrego comigo a certeza de que estou longe de terminar esse percurso — mas caminho com orgulho da trajetória até aqui.
+          <br><br>
+          E você? Qual parte da sua história precisa ser contada?
+        </p>
+        <footer class="blockquote-footer">Yan Pedro</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-4 d-flex flex-column align-items-center">
+      <img src="imagens/kobe.jpeg"
+           alt="Gratidão"
+           class="img-fluid rounded shadow-sm mb-3"
+           style="max-height: 180px; object-fit: cover; width: 100%;">
+      
+    </div>
+  </div>
+  <div class="d-flex justify-content-start mt-4">
+    <button class="btn btn-gradient" onclick="showSection(5)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+      </svg>
+      Voltar
+    </button>
+  </div>
+</div>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Ordem das seções
+      const sectionIds = [
+        "capa",
+        "infancia",
+        "familia",
+        "hobbies",
+        "momentos",
+        "galeria",
+        "mensagem",
+      ];
+
+      function showSection(idx) {
+        document
+          .querySelectorAll(".section")
+          .forEach((sec) => sec.classList.remove("active-section"));
+        document
+          .getElementById(sectionIds[idx])
+          .classList.add("active-section");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
